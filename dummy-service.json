@@ -1,0 +1,21 @@
+{
+  "service": {
+    "name": "dummy-service",
+    "checks": [
+      {
+        "id": "api-2000",
+        "name": "HTTP API on port 2000",
+        "http": "http://127.0.0.1:2000/health",
+        "interval": "10s",
+        "timeout": "1s"
+      },
+      {
+        "id": "api-2001",
+        "name": "HTTP API on port 2001",
+        "http": "http://127.0.0.1:2001/health",
+        "interval": "10s",
+        "timeout": "1s"
+      }
+    ]
+  }
+}
